@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/TableLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    android:background="#ffffff">
+
+    <!-- Tiêu đề -->
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:background="#009900"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_span="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Giải phương trình bậc 2"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="10dp" />
+    </TableRow>
+
+    <!-- Nhập a -->
+
+    <!-- Nhập b -->
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Nhập a:"
+            android:background="#eaffea"
+            />
+
+        <EditText
+            android:id="@+id/edita"
+            android:layout_span="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:padding="5dp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhập b:"
+            android:background="#eaffea"
+
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/editb"
+            android:layout_span="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:padding="5dp" />
+    </TableRow>
+
+    <!-- Nhập c -->
+    <TableRow
+        android:id="@+id/tableRow4">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhập c:"
+            android:padding="5dp"
+            android:background="#eaffea"/>
+
+        <EditText
+            android:id="@+id/editc"
+            android:layout_span="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:padding="5dp" />
+    </TableRow>
+
+    <!-- Nút chức năng (chiếm toàn bộ hàng) -->
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btntieptuc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiếp tục"
+            android:layout_marginEnd="5dp"/>
+
+        <Button
+            android:id="@+id/btngiaipt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giải PT"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"/>
+
+        <Button
+            android:id="@+id/btnthoat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thoát"
+            android:layout_marginStart="5dp"/>
+    </TableRow>
+
+    <!-- Kết quả -->
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/txtkq"
+            android:layout_span="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kết quả sẽ hiển thị tại đây"
+            android:textColor="#ffffff"
+            android:background="#009900"
+            android:padding="8dp"
+            />
+    </TableRow>
+</TableLayout>
